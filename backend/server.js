@@ -106,7 +106,7 @@ app.post('/contact', async (req, res) => {
 });
 
 // 404 handler
-app.use('*', (req, res) => {
+app.use((req, res) => {
   console.log('❌ 404 - Route not found:', req.path);
   res.status(404).json({ error: 'Route not found' });
 });
