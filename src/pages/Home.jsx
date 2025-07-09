@@ -75,7 +75,7 @@ const Home = () => {
 
   const skills = [
     { icon: Code, title: 'Frontend Development', desc: 'Crafting pixel-perfect, responsive user interfaces with modern frameworks like React, Vue.js, and Angular.' },
-    { icon: Palette, title: 'UI/UX Design', desc: 'Designing intuitive and engaging user experiences, from wireframing to high-fidelity mockups using tools like Figma and Adobe XD.' },
+    { icon: Palette, title: 'Data / AI-ML', desc: 'Building new solutions to problems using advanced ML Algorithms.' },
     { icon: Zap, title: 'Backend Development', desc: 'Building robust and scalable server-side applications and APIs using Node.js, Python, and various database technologies.' },
   ];
 

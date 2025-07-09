@@ -44,27 +44,27 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      detail: 'hello@johndoe.com',
-      link: 'mailto:hello@johndoe.com'
+      detail: 'vibhor4dev@gmail.com',
+      link: 'mailto:vibhor4dev@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      detail: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      detail: '+91-9464752930',
+      link: '/contact'
     },
     {
       icon: MapPin,
       title: 'Location',
-      detail: 'San Francisco, CA',
-      link: 'https://maps.google.com/?q=San Francisco, CA'
+      detail: 'Chandigarh, India',
+      link: 'https://maps.google.com/?q=Chandigarh India'
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/johndoe', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/johndoe', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/johndoe', label: 'Twitter' }
+    { icon: Github, href: 'https://github.com/VikingForcee', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/vibhor-gupta-221a3328a/', label: 'LinkedIn' },
+    // { icon: Twitter, href: 'https://twitter.com/', label: 'Twitter' }
   ];
 
   return (

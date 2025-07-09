@@ -15,12 +15,12 @@ const About = () => {
       technologies: ["Node.js", "Python", "Express", "Django/Flask", "MongoDB", "PostgreSQL", "Redis", "GraphQL"]
     },
     {
-      category: "Design",
+      category: "Data Analysis",
       icon: Palette,
       technologies: ["Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator", "Framer", "UI/UX Principles"]
     },
     {
-      category: "DevOps & Tools",
+      category: "Machine Learning",
       icon: Globe, // Changed from Globe to a more generic icon for 'Other'
       technologies: ["Git", "Docker", "AWS", "Firebase", "Kubernetes", "CI/CD", "Jira", "Trello"]
     }
@@ -28,31 +28,31 @@ const About = () => {
 
   const experience = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Solutions Inc.",
-      period: "Jan 2022 - Present",
-      description: "Led the architecture and development of scalable, high-performance React applications. Mentored a team of 5+ junior developers, fostering best practices and code quality. Optimized critical rendering paths, resulting in a 40% improvement in application load times and overall performance. Actively contributed to UI/UX design discussions, ensuring technical feasibility and adherence to design principles."
+      title: "ML Intern",
+      company: "CSIO-CSIR Chandigarh",
+      period: "Jan 2025 - June 2025",
+      description: "Desgined a system to grade Makhanas (Foxnuts) into different Grades. This includes, building Hardware for capturing images without any environmental factors and the Image processing machine learning model to grade the batch. "
     },
-    {
-      title: "Full Stack Developer",
-      company: "Digital Agency",
-      period: "Jul 2020 - Dec 2021",
-      description: "Developed end-to-end web solutions, building robust RESTful APIs with Node.js/Express and intuitive user interfaces with React. Managed MongoDB databases, including schema design and query optimization. Collaborated closely with design teams to translate wireframes and mockups into pixel-perfect, responsive web applications."
-    },
-    {
-      title: "Frontend Developer",
-      company: "Startup Hub",
-      period: "Sep 2019 - Jun 2020",
-      description: "Implemented responsive web applications using modern JavaScript frameworks (React & Vue.js). Focused on component-based development and state management. Worked closely with UX designers to translate concepts into functional and aesthetically pleasing user interfaces. Contributed to agile development cycles, participating in daily stand-ups and sprint reviews."
-    }
+    // {
+    //   title: "Full Stack Developer",
+    //   company: "Digital Agency",
+    //   period: "Jul 2020 - Dec 2021",
+    //   description: "Developed end-to-end web solutions, building robust RESTful APIs with Node.js/Express and intuitive user interfaces with React. Managed MongoDB databases, including schema design and query optimization. Collaborated closely with design teams to translate wireframes and mockups into pixel-perfect, responsive web applications."
+    // },
+    // {
+    //   title: "Frontend Developer",
+    //   company: "Startup Hub",
+    //   period: "Sep 2019 - Jun 2020",
+    //   description: "Implemented responsive web applications using modern JavaScript frameworks (React & Vue.js). Focused on component-based development and state management. Worked closely with UX designers to translate concepts into functional and aesthetically pleasing user interfaces. Contributed to agile development cycles, participating in daily stand-ups and sprint reviews."
+    // }
   ];
 
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      period: "Aug 2015 - May 2019",
-      description: "Graduated with honors (Magna Cum Laude). My coursework emphasized web development, data structures, algorithms, and software engineering principles. Completed a capstone project on a real-time collaborative editing tool."
+      degree: "Bachelor of Technology in Electrical Engineering",
+      institution: "Punjab Engineering College, Chandigarh",
+      period: "Nov 2022 - Present",
+      description: "Currently pursuing Electrical Engineering from Punjab Engineering College (PEC). "
     }
   ];
 
@@ -89,7 +89,7 @@ const About = () => {
                 About Me
               </h1>
               <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-                I'm a passionate **full-stack developer** with over 5 years of experience in crafting
+                I'm a passionate **Software developer** with keen interest in building
                 robust and intuitive digital solutions. My expertise lies in transforming complex
                 challenges into **clean, efficient, and user-friendly applications** that
                 truly make an impact. I thrive on continuous learning and embracing new technologies to deliver exceptional results.
@@ -97,7 +97,7 @@ const About = () => {
               <div className="flex flex-wrap gap-x-6 gap-y-4 mb-8">
                 <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-lg font-medium">
                   <MapPin className="h-6 w-6 text-blue-600 dark:text-blue-400" />
-                  <span>San Francisco, CA</span>
+                  <span>Chandigarh, India</span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-lg font-medium">
                   <Calendar className="h-6 w-6 text-blue-600 dark:text-blue-400" />
@@ -105,7 +105,7 @@ const About = () => {
                 </div>
               </div>
               <motion.a
-                href="/path/to/your/resume.pdf" // **IMPORTANT: Replace with your actual resume path**
+                href="./src/assets/Vibhor_Gupta.pdf"
                 download="Vibhor_Resume.pdf"
                 className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold text-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-500"
                 whileHover={{ scale: 1.05 }}
@@ -123,7 +123,7 @@ const About = () => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&h=600&auto=format&fit=crop&crop=face"
+                src="./src/assets/vibImg2.jpg"
                 alt="Profile picture of Vibhor"
                 className="w-72 h-72 md:w-96 md:h-96 rounded-full object-cover shadow-2xl ring-4 ring-blue-300 dark:ring-blue-600 ring-offset-4 ring-offset-white dark:ring-offset-gray-900"
               />
