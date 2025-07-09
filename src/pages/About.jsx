@@ -105,7 +105,7 @@ const About = () => {
                 </div>
               </div>
               <motion.a
-                href="./src/assets/Vibhor_Gupta.pdf"
+                href="./public/Vibhor_Gupta.pdf"
                 download="Vibhor_Resume.pdf"
                 className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold text-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-500"
                 whileHover={{ scale: 1.05 }}
@@ -123,7 +123,7 @@ const About = () => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               <img
-                src="./src/assets/vibImg2.jpg"
+                src="./public/vibImg2.jpg"
                 alt="Profile picture of Vibhor"
                 className="w-72 h-72 md:w-96 md:h-96 rounded-full object-cover shadow-2xl ring-4 ring-blue-300 dark:ring-blue-600 ring-offset-4 ring-offset-white dark:ring-offset-gray-900"
               />
