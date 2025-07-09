@@ -2,15 +2,20 @@ import express from 'express';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+
 dotenv.config();
 
 const app = express();
 
+// 🔥 Simple CORS - Allow all origins in development
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: true,
+  credentials: true
 }));
+
 app.use(express.json());
 
+// ✅ Input validation
 const validateInput = (name, email, message) => {
   if (!name || !email || !message) return 'All fields are required';
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -24,7 +29,7 @@ app.post('/contact', async (req, res) => {
   const error = validateInput(name, email, message);
   if (error) return res.status(400).json({ error });
 
-  const transporter = nodemailer.createTransport({
+  const transporter = nodemailer.createTransporter({
     service: 'gmail',
     auth: {
       user: process.env.MAIL_USER,
@@ -49,4 +54,4 @@ app.post('/contact', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));

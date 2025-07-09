@@ -25,7 +25,7 @@ const handleSubmit = async (e) => {
   setSubmitStatus('');
 
   try {
-    const response = await fetch('https://portfolio-34nk.onrender.com', {
+    const response = await fetch('https://portfolio-34nk.onrender.com/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
