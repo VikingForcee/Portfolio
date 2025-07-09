@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, MessageCircle } from 'lucide-react';
 
@@ -19,33 +20,41 @@ const Contact = () => {
     }));
   };
 
+
+// inside the component
 const handleSubmit = async (e) => {
   e.preventDefault();
   setIsSubmitting(true);
   setSubmitStatus('');
 
-  try {
-    const response = await fetch('https://portfolio-34nk.onrender.com/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
+  const serviceID = 'service_j5mu38v';
+  const templateID = 'template_ae5la2e';
+  const publicKey = 'HKlOSPehkZE9VJJBC';
 
-    if (response.ok) {
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    } else {
-      throw new Error('Failed to send message');
-    }
+  try {
+    const result = await emailjs.send(
+      serviceID,
+      templateID,
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      publicKey
+    );
+
+    console.log('Email sent:', result.text);
+    setSubmitStatus('success');
+    setFormData({ name: '', email: '', subject: '', message: '' });
   } catch (error) {
-    console.error('Error:', error);
+    console.error('EmailJS error:', error);
     setSubmitStatus('error');
   } finally {
     setIsSubmitting(false);
   }
 };
+
 
   const contactInfo = [
     {
