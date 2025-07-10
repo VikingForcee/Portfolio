@@ -10,7 +10,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/VikingForcee', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/vibhor-gupta-221a3328a/', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/johndoe', label: 'Twitter' },
+    // { icon: Twitter, href: 'https://twitter.com/', label: 'Twitter' },
     { icon: Mail, href: 'mailto:vibhor4dev@gmail.com', label: 'Email' }
   ];
 

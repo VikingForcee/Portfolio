@@ -47,7 +47,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/85 dark:bg-gray-900/85 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 transition-colors duration-300 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white/60 dark:bg-slate-900/95 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 transition-colors duration-300 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}

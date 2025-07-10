@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { ThemeProvider } from './context/ThemeContext.jsx';
+import CustomCursor from './components/CustomCursor.jsx';
 
 function AppWrapper() {
   const location = useLocation();
@@ -16,6 +17,7 @@ function AppWrapper() {
 
       <main className="flex-grow">
         <ScrollToTop pathname={location.pathname} />
+        <CustomCursor />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

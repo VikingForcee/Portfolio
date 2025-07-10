@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Award, Calendar, MapPin, Code, Database, Palette, Globe } from 'lucide-react';
+import { Download, Award, Calendar, MapPin, Code, Database, Palette, Globe, Bot } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -7,22 +7,22 @@ const About = () => {
     {
       category: "Frontend",
       icon: Code,
-      technologies: ["React", "Vue.js", "Angular", "TypeScript", "Next.js", "Tailwind CSS", "Sass/Less"]
+      technologies: ["React", "Vite", "Javascript", "TypeScript", "Next.js", "Tailwind CSS", "Shadcn", "Framer Motion"]
     },
     {
       category: "Backend",
       icon: Database,
-      technologies: ["Node.js", "Python", "Express", "Django/Flask", "MongoDB", "PostgreSQL", "Redis", "GraphQL"]
+      technologies: ["Node.js", "Python", "Express", "C/C++", "Firebase", "PostgreSQL", "Redis", "GraphQL"]
     },
     {
       category: "Data Analysis",
-      icon: Palette,
-      technologies: ["Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator", "Framer", "UI/UX Principles"]
+      icon: Globe,
+      technologies: ["Excel", "Python", "Pandas", "Numpy", "Power BI", "MySQL"]
     },
     {
       category: "Machine Learning",
-      icon: Globe, // Changed from Globe to a more generic icon for 'Other'
-      technologies: ["Git", "Docker", "AWS", "Firebase", "Kubernetes", "CI/CD", "Jira", "Trello"]
+      icon: Bot, // Changed from Globe to a more generic icon for 'Other'
+      technologies: ["UI Path" ,"Regression", "Neural Networks", "CNN", "Clustering", "Decision Trees", "RAG", "Web Scrapping"]
     }
   ];
 

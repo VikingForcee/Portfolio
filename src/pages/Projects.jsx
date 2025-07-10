@@ -10,13 +10,13 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A robust e-commerce platform offering user authentication, secure payment processing, and a comprehensive admin dashboard for managing products and orders.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80",
-      tags: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-      category: "fullstack",
-      liveUrl: "https://your-ecommerce-demo.com", // Replace with actual URL
-      githubUrl: "https://github.com/your-username/ecommerce-repo", // Replace with actual URL
+      title: "Mini Cache Server",
+      description: "A lightweight caching server built with Redis to optimize API performance by reducing redundant database calls. Implements key-based expiration, custom TTL, and supports both write-through and read-through strategies.",
+      image: "https://images.unsplash.com/photo-1581091215367-5c6b8c2453c3?auto=format&fit=crop&w=600&q=80", // Replace with your own if needed
+      tags: ["Node.js", "Express", "Redis", "Caching", "API Optimization"],
+      category: "backend",
+      liveUrl: "https://your-cache-server-demo.com", // Replace with actual URL
+      githubUrl: "https://github.com/your-username/mini-cache-server", // Replace with actual URL
       featured: true
     },
     {
@@ -32,14 +32,14 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Interactive Weather Dashboard",
-      description: "A visually appealing weather application providing detailed forecasts, interactive maps, and location-based weather alerts using modern APIs.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=600&q=80",
-      tags: ["Vue.js", "OpenWeather API", "Chart.js", "Responsive Design"],
-      category: "frontend",
-      liveUrl: "https://your-weather-demo.com", // Replace with actual URL
-      githubUrl: "https://github.com/your-username/weather-app-repo", // Replace with actual URL
-      featured: false
+      title: "ResumeBot.io",
+      description: "An intelligent hiring automation tool that parses resumes from Gmail, matches them to your Job Description, ranks candidates, and sends personalized emails to shortlisted or rejected applicants — all in a single pipeline.",
+      image: "https://images.unsplash.com/photo-1635301917774-453b1c9ebd6c?auto=format&fit=crop&w=600&q=80", // Replace with a relevant image if needed
+      tags: ["Python", "Flask", "NLP", "TF-IDF", "IMAP", "Automation"],
+      category: "ai",
+      liveUrl: "https://resumebot-io-demo.com", // Replace with actual deployed URL if available
+      githubUrl: "https://github.com/your-username/resumebot.io", // Replace with your actual GitHub repo
+      featured: true
     },
     {
       id: 4,
@@ -56,11 +56,11 @@ const Projects = () => {
       id: 5,
       title: "Personal Portfolio Website",
       description: "This very website! A modern, responsive portfolio built to showcase projects and skills, featuring dark/light themes and smooth animations.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=80",
+      image: "/home1.png",
       tags: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
       category: "frontend",
       liveUrl: "#", // This is the current site
-      githubUrl: "https://github.com/your-username/your-portfolio-repo", // Replace with actual URL
+      githubUrl: "https://github.com/VikingForcee/Portfolio", // Replace with actual URL
       featured: true
     },
     {
@@ -68,56 +68,56 @@ const Projects = () => {
       title: "Custom Blog CMS",
       description: "A comprehensive content management system tailored for blogs, featuring a rich text editor, image uploads, and SEO optimization tools.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80",
-      tags: ["Next.js", "Strapi CMS", "GraphQL", "Cloudinary"],
+      tags: ["Next.js", "Strapi CMS", "GraphQL"],
       category: "fullstack",
       liveUrl: "https://your-blog-cms-demo.com", // Replace with actual URL
-      githubUrl: "https://github.com/your-username/blog-cms-repo", // Replace with actual URL
+      githubUrl: "https://github.com/VikingForcee/BlogWebsite", // Replace with actual URL
       featured: false
     },
     {
       id: 7,
-      title: "Cross-Platform Expense Tracker",
-      description: "A mobile-first personal finance management application with intuitive budget tracking, expense categorization, and insightful financial reports.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80",
-      tags: ["React Native", "Expo", "Firebase", "Redux Toolkit"],
-      category: "mobile",
-      liveUrl: "https://your-expense-tracker-store.com", // Link to app store or Expo snack
-      githubUrl: "https://github.com/your-username/expense-tracker-mobile", // Replace with actual URL
-      featured: false
+      title: "To-Do App",
+      description: "A fully functional task management application with Clerk authentication, dynamic theming, date-wise task grouping, and real-time updates via Firebase. Features include task creation, completion, bulk deletion, and personalized themes.",
+      image: "/to-do.png",
+      tags: ["React", "Firebase", "Clerk", "Tailwind CSS"],
+      category: "fullstack",
+      liveUrl: "https://to-do-app-git-main-vibhor-guptas-projects-315c0f20.vercel.app/", // Replace with actual deployed URL
+      githubUrl: "https://github.com/VikingForcee/To-Do-App", // Replace with actual GitHub repo
+      featured: true
     },
+    // {
+    //   id: 8,
+    //   title: "Modern Chat Application",
+    //   description: "A real-time chat application featuring private messaging, group chats, and seamless file sharing capabilities for enhanced communication.",
+    //   image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=600&q=80",
+    //   tags: ["React", "Socket.IO", "Node.js", "Express", "MongoDB"],
+    //   category: "fullstack",
+    //   liveUrl: "https://your-chat-app-demo.com", // Replace with actual URL
+    //   githubUrl: "https://github.com/your-username/chat-app-repo", // Replace with actual URL
+    //   featured: false
+    // },
     {
       id: 8,
-      title: "Modern Chat Application",
-      description: "A real-time chat application featuring private messaging, group chats, and seamless file sharing capabilities for enhanced communication.",
-      image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=600&q=80",
-      tags: ["React", "Socket.IO", "Node.js", "Express", "MongoDB"],
-      category: "fullstack",
-      liveUrl: "https://your-chat-app-demo.com", // Replace with actual URL
-      githubUrl: "https://github.com/your-username/chat-app-repo", // Replace with actual URL
-      featured: false
+      title: "FILLBOT",
+      description: "An RPA-powered automation tool that screens resumes from emails, extracts candidate information using OCR, fills Microsoft Forms automatically, and sends daily audit reports to streamline recruitment for HR teams.",
+      image: "https://images.unsplash.com/photo-1637763723578-2ac72d2497c5?auto=format&fit=crop&w=600&q=80", // Replace with actual project image if desired
+      tags: ["UiPath", "Python", "RPA", "OCR", "Microsoft Forms", "Excel"],
+      category: "automation",
+      liveUrl: "https://drive.google.com/file/d/1t6lCfoZ6mvIv3jJ5kHaGCPOkqgumZQzj/view?usp=sharing", // Link to the video
+      githubUrl: "https://www.canva.com/design/DAGSFhbn-Fw/gpGKqNEvr45jOd9gb_9_BQ/view?utm_content=DAGSFhbn-Fw&utm_campaign=designshare&utm_medium=link&utm_source=editor", // Link to the PPT
+      featured: true
     },
-    {
-        id: 9,
-        title: "AI Code Companion",
-        description: "An AI-powered assistant integrated into the development environment to provide code suggestions, bug fixes, and explanations in real-time.",
-        image: "https://images.unsplash.com/photo-1587620962725-abab7fe65553?auto=format&fit=crop&w=600&q=80",
-        tags: ["Python", "Flask", "OpenAI API", "VS Code Extension"],
-        category: "backend",
-        liveUrl: "https://your-ai-companion-demo.com",
-        githubUrl: "https://github.com/your-username/ai-code-companion",
-        featured: true
-    },
-    {
-        id: 10,
-        title: "Decentralized Voting DApp",
-        description: "A secure and transparent decentralized application (DApp) for voting, built on the Ethereum blockchain.",
-        image: "https://images.unsplash.com/photo-1620092102142-b05b3b4b5b0f?auto=format&fit=crop&w=600&q=80",
-        tags: ["Solidity", "Ethereum", "React", "Web3.js"],
-        category: "blockchain",
-        liveUrl: "https://your-dapp-demo.com",
-        githubUrl: "https://github.com/your-username/voting-dapp",
-        featured: false
-    }
+    // {
+    //     id: 10,
+    //     title: "Decentralized Voting DApp",
+    //     description: "A secure and transparent decentralized application (DApp) for voting, built on the Ethereum blockchain.",
+    //     image: "https://images.unsplash.com/photo-1620092102142-b05b3b4b5b0f?auto=format&fit=crop&w=600&q=80",
+    //     tags: ["Solidity", "Ethereum", "React", "Web3.js"],
+    //     category: "blockchain",
+    //     liveUrl: "https://your-dapp-demo.com",
+    //     githubUrl: "https://github.com/your-username/voting-dapp",
+    //     featured: false
+    // }
   ];
 
   const filters = [
