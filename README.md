@@ -40,10 +40,7 @@ Initially, the contact form sent emails using:
 ## 🖼️ Screenshots
 
 ### 📌 Home Page Preview
-![Homepage Screenshot](/home.png)
-
-### 📱 Mobile Responsive Design
-![Mobile View](/home2.png)
+![Homepage Screenshot](/NewHomeScreen.png)
 
 ### 📧 About Page
 ![About Page](/about1.png)
