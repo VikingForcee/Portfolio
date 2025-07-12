@@ -51,7 +51,7 @@ const Home = () => {
       id: 5,
       title: "Personal Portfolio Website",
       description: "This very website! A modern, responsive portfolio built to showcase projects and skills, featuring dark/light themes and smooth animations.",
-      image: "/home1.png",
+      image: "/NewHomeScreen.png",
       tags: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
       category: "frontend",
       liveUrl: "#",

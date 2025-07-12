@@ -27,9 +27,9 @@ const handleSubmit = async (e) => {
   setIsSubmitting(true);
   setSubmitStatus('');
 
-  const serviceID = 'service_j5mu38v';
-  const templateID = 'template_ae5la2e';
-  const publicKey = 'HKlOSPehkZE9VJJBC';
+const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   try {
     const result = await emailjs.send(

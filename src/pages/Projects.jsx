@@ -34,11 +34,11 @@ const Projects = () => {
       id: 3,
       title: "ResumeBot.io",
       description: "An intelligent hiring automation tool that parses resumes from Gmail, matches them to your Job Description, ranks candidates, and sends personalized emails to shortlisted or rejected applicants — all in a single pipeline.",
-      image: "https://images.unsplash.com/photo-1635301917774-453b1c9ebd6c?auto=format&fit=crop&w=600&q=80", // Replace with a relevant image if needed
+      image: "/ResumeParserMLBot.png", // Replace with a relevant image if needed
       tags: ["Python", "Flask", "NLP", "TF-IDF", "IMAP", "Automation"],
       category: "ai",
-      liveUrl: "https://resumebot-io-demo.com", // Replace with actual deployed URL if available
-      githubUrl: "https://github.com/your-username/resumebot.io", // Replace with your actual GitHub repo
+      liveUrl: "https://resumebotv7.streamlit.app/", // Replace with actual deployed URL if available
+      githubUrl: "https://github.com/VikingForcee/ResumeBot.io", // Replace with your actual GitHub repo
       featured: true
     },
     {
@@ -56,7 +56,7 @@ const Projects = () => {
       id: 5,
       title: "Personal Portfolio Website",
       description: "This very website! A modern, responsive portfolio built to showcase projects and skills, featuring dark/light themes and smooth animations.",
-      image: "/home1.png",
+      image: "/NewHomeScreen.png",
       tags: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
       category: "frontend",
       liveUrl: "#", // This is the current site
