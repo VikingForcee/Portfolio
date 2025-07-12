@@ -40,13 +40,13 @@ Initially, the contact form sent emails using:
 ## 🖼️ Screenshots
 
 ### 📌 Home Page Preview
-![Homepage Screenshot](/NewHomeScreen.png)
+![Homepage Screenshot](/public/NewHomeScreen.png)
 
 ### 📧 About Page
-![About Page](/about1.png)
+![About Page](/public/about1.png)
 
 ### 🎨 Projects Section
-![Projects Section](/projects1.png)
+![Projects Section](/public/project1.png)
 
 ---
 
