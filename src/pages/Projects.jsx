@@ -19,17 +19,17 @@ const Projects = () => {
       githubUrl: "https://github.com/your-username/mini-cache-server", // Replace with actual URL
       featured: true
     },
-    {
-      id: 2,
-      title: "Real-time Task Manager",
-      description: "Collaborative task management application with real-time updates, team collaboration features, and an intuitive drag-and-drop interface for efficient workflow.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=600&q=80",
-      tags: ["React", "Firebase", "Tailwind CSS", "WebSockets"], // Changed Socket.io to WebSockets for generality
-      category: "frontend",
-      liveUrl: "https://your-task-manager-demo.com", // Replace with actual URL
-      githubUrl: "https://github.com/your-username/task-manager-repo", // Replace with actual URL
-      featured: true
-    },
+    // {
+    //   id: 2,
+    //   title: "Real-time Task Manager",
+    //   description: "Collaborative task management application with real-time updates, team collaboration features, and an intuitive drag-and-drop interface for efficient workflow.",
+    //   image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=600&q=80",
+    //   tags: ["React", "Firebase", "Tailwind CSS", "WebSockets"], // Changed Socket.io to WebSockets for generality
+    //   category: "frontend",
+    //   liveUrl: "https://your-task-manager-demo.com", // Replace with actual URL
+    //   githubUrl: "https://github.com/your-username/task-manager-repo", // Replace with actual URL
+    //   featured: true
+    // },
     {
       id: 3,
       title: "ResumeBot.io",
@@ -41,17 +41,17 @@ const Projects = () => {
       githubUrl: "https://github.com/VikingForcee/ResumeBot.io", // Replace with your actual GitHub repo
       featured: true
     },
-    {
-      id: 4,
-      title: "Social Media REST API",
-      description: "A robust RESTful API backend for a social media platform, including user authentication, post management, comments, and real-time notifications.",
-      image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&w=600&q=80",
-      tags: ["Node.js", "Express.js", "PostgreSQL", "JWT Authentication"],
-      category: "backend",
-      liveUrl: "https://your-social-api-docs.com", // Link to API docs if no live demo
-      githubUrl: "https://github.com/your-username/social-api-repo", // Replace with actual URL
-      featured: false
-    },
+    // {
+    //   id: 4,
+    //   title: "Social Media REST API",
+    //   description: "A robust RESTful API backend for a social media platform, including user authentication, post management, comments, and real-time notifications.",
+    //   image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?auto=format&fit=crop&w=600&q=80",
+    //   tags: ["Node.js", "Express.js", "PostgreSQL", "JWT Authentication"],
+    //   category: "backend",
+    //   liveUrl: "https://your-social-api-docs.com", // Link to API docs if no live demo
+    //   githubUrl: "https://github.com/your-username/social-api-repo", // Replace with actual URL
+    //   featured: false
+    // },
     {
       id: 5,
       title: "Personal Portfolio Website",
@@ -67,10 +67,10 @@ const Projects = () => {
       id: 6,
       title: "Custom Blog CMS",
       description: "A comprehensive content management system tailored for blogs, featuring a rich text editor, image uploads, and SEO optimization tools.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80",
+      image: "/BlogHome.png",
       tags: ["Next.js", "Strapi CMS", "GraphQL"],
       category: "fullstack",
-      liveUrl: "https://your-blog-cms-demo.com", // Replace with actual URL
+      liveUrl: "https://blog-website-one-phi.vercel.app/", // Replace with actual URL
       githubUrl: "https://github.com/VikingForcee/BlogWebsite", // Replace with actual URL
       featured: false
     },
@@ -220,17 +220,17 @@ const Projects = () => {
             </div>
 
             {/* Filter Buttons */}
-            <div className="flex items-center gap-3 overflow-x-auto pb-2 md:pb-0 scrollbar-hide"> {/* Added scrollbar-hide */}
+            <div className="flex items-center gap-3  pb-2 md:pb-0 scrollbar-hide"> {/* Added scrollbar-hide */}
               <Filter className="h-5 w-5 text-gray-600 dark:text-gray-400 flex-shrink-0" />
               <div className="flex flex-nowrap gap-3"> {/* Changed to flex-nowrap */}
                 {filters.map((filter) => (
                   <button
                     key={filter.key}
                     onClick={() => setActiveFilter(filter.key)}
-                    className={`px-5 py-2 whitespace-nowrap rounded-full text-sm font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md
+                    className={`md:px-5 py-2 whitespace-nowrap rounded-full text-sm font-medium transition-all duration-300 ease-in-out shadow-sm hover:shadow-md
                       ${activeFilter === filter.key
-                          ? 'bg-blue-600 text-white transform scale-105'
-                          : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-blue-100 dark:hover:bg-gray-600 hover:text-blue-700 dark:hover:text-blue-300'
+                          ? 'bg-blue-600 text-white text-xs px-1.5 md:text-sm md:px-5 transform scale-105'
+                          : 'bg-gray-200 dark:bg-gray-700 text-xs px-1.5 md:text-sm md:px-5 text-gray-700 dark:text-gray-200 hover:bg-blue-100 dark:hover:bg-gray-600 hover:text-blue-700 dark:hover:text-blue-300'
                       }`}
                     aria-pressed={activeFilter === filter.key}
                   >
